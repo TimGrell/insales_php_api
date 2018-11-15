@@ -6,6 +6,7 @@ use InSales\API\Traits\{Account,
     Article,
     ApplicationCharge,
     ApplicationWidget,
+    Asset,
     Blog,
     Category,
     Client,
@@ -65,7 +66,7 @@ class ApiClient
         Similar, StockCurrency, Supplementary,
         Variant, VariantField, VariantFieldValue,
         WebHook,
-        Theme,
+        Theme, Asset,
         Testing,
         PaymentNotify;
 
@@ -109,6 +110,7 @@ class ApiClient
     const API_URL_VARIANT_FIELD_VALUE = '/admin/products/{slug}/variant_field_values';
     const API_URL_WEBHOOK = '/admin/webhooks';
     const API_URL_THEME = '/admin/themes';
+    const API_URL_ASSETS = '/admin/themes/{slug}/assets';
     const PAYMENT_URL_NOTIFY = '/payments/external/server';
 
     /** @var HttpClient */
