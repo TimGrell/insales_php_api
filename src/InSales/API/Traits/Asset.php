@@ -20,7 +20,7 @@ trait Asset
     public function getAsset(int $id, int $themeId) : ApiResponse
     {
         return $this->client->executeGetRequest(
-            $this->generateCompoundUrl(self::API_URL_ARTICLE, $themeId, $id),
+            $this->generateCompoundUrl(self::API_URL_ASSETS, $themeId, $id),
             $id
         );
     }
@@ -45,7 +45,7 @@ trait Asset
     public function updateAsset(int $id, int $themeId, array $data) : ApiResponse
     {
         return $this->client->executeUpdateRequest(
-            $this->generateCompoundUrl(self::API_URL_ARTICLE, $themeId, $id),
+            $this->generateCompoundUrl(self::API_URL_ASSETS, $themeId, $id),
             $data
         );
     }
