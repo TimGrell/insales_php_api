@@ -5,7 +5,7 @@ namespace InSales\API\Traits;
 use InSales\API\ApiResponse;
 
 /**
- * Trait Article Часть API-клиента, отвечающая за ассеты
+ * Trait Asset Часть API-клиента, отвечающая за ассеты
  * @package InSales\Traits
  * @mixin \InSales\API\ApiClient
  */
@@ -42,7 +42,7 @@ trait Asset
      * @param array $data Массив данных
      * @return ApiResponse
      */
-    public function updateArticle(int $id, int $themeId, array $data) : ApiResponse
+    public function updateAsset(int $id, int $themeId, array $data) : ApiResponse
     {
         return $this->client->executeUpdateRequest(
             $this->generateCompoundUrl(self::API_URL_ARTICLE, $themeId, $id),

@@ -5,7 +5,7 @@ namespace InSales\API\Traits;
 use InSales\API\ApiResponse;
 
 /**
- * Theme WebHook Часть API-клиента, отвечающая за темы
+ * Trait Theme Часть API-клиента, отвечающая за темы
  * @package InSales\Traits
  * @mixin \InSales\API\ApiClient
  */
